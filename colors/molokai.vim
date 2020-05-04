@@ -12,14 +12,8 @@
 "
 
 hi clear
-
-if version > 580
-    " no guarantees for version 5.8 and below, but this makes it stop
-    " complaining
-    hi clear
-    if exists("syntax_on")
-        syntax reset
-    endif
+if exists("syntax_on")
+  syntax reset
 endif
 let g:colors_name="molokai"
 
@@ -58,7 +52,7 @@ hi Title           ctermfg=203
 hi Visual                      ctermbg=238
 
 hi Comment         ctermfg=244
-hi LineNr          ctermfg=239 ctermbg=235
+hi LineNr          ctermfg=239 ctermbg=236
 hi NonText         ctermfg=239
 hi SpecialKey      ctermfg=239
 
@@ -80,16 +74,16 @@ hi Repeat          ctermfg=161               cterm=bold
 hi Search          ctermfg=0   ctermbg=222   cterm=NONE
 
 " marks column
-hi SignColumn      ctermfg=118 ctermbg=235
+hi SignColumn      ctermfg=118 ctermbg=236
 hi SpecialChar     ctermfg=161               cterm=bold
 hi SpecialComment  ctermfg=245               cterm=bold
 hi Special         ctermfg=81
-if has("spell")
-   hi SpellBad                ctermbg=52
-   hi SpellCap                ctermbg=17
-   hi SpellLocal              ctermbg=17
-   hi SpellRare  ctermfg=none ctermbg=none  cterm=reverse
-endif
+
+  hi SpellBad                ctermbg=52
+  hi SpellCap                ctermbg=17
+  hi SpellLocal              ctermbg=17
+  hi SpellRare  ctermfg=none ctermbg=none  cterm=reverse
+
 hi Statement       ctermfg=161               cterm=bold
 hi StatusLine      ctermfg=238 ctermbg=253
 hi StatusLineNC    ctermfg=244 ctermbg=232
@@ -105,7 +99,7 @@ hi Underlined      ctermfg=244               cterm=underline
 
 hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
 hi VisualNOS                   ctermbg=238
-hi Visual                      ctermbg=235
+hi Visual                      ctermbg=236
 hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold
 hi WildMenu        ctermfg=81  ctermbg=16
 
@@ -115,6 +109,7 @@ hi ColorColumn                 ctermbg=236
 hi LineNr          ctermfg=250 ctermbg=236
 hi NonText         ctermfg=59
 
-" Must be at the end, because of ctermbg=234 bug.
+" We always put this at the end as Vim will otherwise overwrite it with a
+" (possibly incorrect) guess. See:
 " https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
 set background=dark
