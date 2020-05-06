@@ -20,8 +20,8 @@ let g:colors_name="molokai"
 "
 " Support for 256-color terminal
 "
-hi Normal          ctermfg=252 ctermbg=235
-hi CursorLine                  ctermbg=236   cterm=none
+hi Normal          ctermfg=252 ctermbg=234
+hi CursorLine                  ctermbg=235   cterm=none
 hi CursorLineNr    ctermfg=208               cterm=none
 
 hi Boolean         ctermfg=141
@@ -52,7 +52,7 @@ hi Title           ctermfg=203
 hi Visual                      ctermbg=238
 
 hi Comment         ctermfg=244
-hi LineNr          ctermfg=239 ctermbg=236
+hi LineNr          ctermfg=239 ctermbg=235
 hi NonText         ctermfg=239
 hi SpecialKey      ctermfg=239
 
@@ -74,15 +74,15 @@ hi Repeat          ctermfg=161               cterm=bold
 hi Search          ctermfg=0   ctermbg=222   cterm=NONE
 
 " marks column
-hi SignColumn      ctermfg=118 ctermbg=236
+hi SignColumn      ctermfg=118 ctermbg=235
 hi SpecialChar     ctermfg=161               cterm=bold
 hi SpecialComment  ctermfg=245               cterm=bold
 hi Special         ctermfg=81
 
-  hi SpellBad                ctermbg=52
-  hi SpellCap                ctermbg=17
-  hi SpellLocal              ctermbg=17
-  hi SpellRare  ctermfg=none ctermbg=none  cterm=reverse
+hi SpellBad                ctermbg=52
+hi SpellCap                ctermbg=17
+hi SpellLocal              ctermbg=17
+hi SpellRare  ctermfg=none ctermbg=none  cterm=reverse
 
 hi Statement       ctermfg=161               cterm=bold
 hi StatusLine      ctermfg=238 ctermbg=253
@@ -99,14 +99,14 @@ hi Underlined      ctermfg=244               cterm=underline
 
 hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
 hi VisualNOS                   ctermbg=238
-hi Visual                      ctermbg=236
+hi Visual                      ctermbg=235
 hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold
 hi WildMenu        ctermfg=81  ctermbg=16
 
 hi Comment         ctermfg=59
-hi CursorColumn                ctermbg=236
-hi ColorColumn                 ctermbg=236
-hi LineNr          ctermfg=250 ctermbg=236
+hi CursorColumn                ctermbg=235
+hi ColorColumn                 ctermbg=235
+hi LineNr          ctermfg=250 ctermbg=235
 hi NonText         ctermfg=59
 
 " We always put this at the end as Vim will otherwise overwrite it with a
