@@ -56,7 +56,7 @@ hi LineNr          ctermfg=239 ctermbg=235
 hi NonText         ctermfg=239
 hi SpecialKey      ctermfg=239
 
-hi MatchParen                   ctermbg=208 cterm=bold
+hi MatchParen      ctermfg=208 ctermbg=234 cterm=bold
 hi ModeMsg         ctermfg=229
 hi MoreMsg         ctermfg=229
 hi Operator        ctermfg=161
