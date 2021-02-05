@@ -51,7 +51,6 @@ hi Tag             ctermfg=197
 hi Title           ctermfg=203
 hi Visual                      ctermbg=238
 
-hi Comment         ctermfg=244
 hi LineNr          ctermfg=239 ctermbg=235
 hi NonText         ctermfg=239
 hi SpecialKey      ctermfg=239
@@ -103,7 +102,7 @@ hi Visual                      ctermbg=235
 hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold
 hi WildMenu        ctermfg=81  ctermbg=16
 
-hi Comment         ctermfg=59
+hi Comment         ctermfg=102
 hi CursorColumn                ctermbg=235
 hi ColorColumn                 ctermbg=235
 hi LineNr          ctermfg=250 ctermbg=235
